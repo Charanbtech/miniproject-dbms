@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Management System</title>
+    <!-- Add some basic styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        img {
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to the Tourism Management System</h1>
+    </header>
+    
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Tours</a>
+        <a href="#">Packages</a>
+        <a href="#">Contact</a>
+    </nav>
+    
+    <!-- Main Content -->
+    <main>
+        <p>Explore our tours and travel packages...</p>
+        <!-- Image Section -->
+        <img src="{{ url_for('static', filename='images/index.jpg') }}" alt="Front Image" width="600">
+    </main>
+</body>
+</html>
